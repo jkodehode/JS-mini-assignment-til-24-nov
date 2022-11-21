@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Container 1 - YES PUSH */
+.yesyes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgoldenrod;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.yesyes input {
+  text-align: center;
+}
+
+#yesBtnTwo {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border: 5px;
+}
+
+#yesyes {
+  background-color: red;
+  color: rgb(0, 255, 0);
+}
+
+#yesMsg {
+  background-color: white;
+  color: blue;
+  width: 300px;
+}
+
+/* Container 2 */
