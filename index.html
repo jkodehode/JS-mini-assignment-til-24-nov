@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" id="pagestyle" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -21,7 +21,53 @@
       <p id="yesMsg"></p>
     </div>
 
-    <!-- Container 2 -->
-    <div></div>
+    <!-- Container 2 - STAR BOX -->
+    <div class="starBox">
+      <div class="starstar">
+        <div class="star-header"><h1>Stars</h1></div>
+        <div class="star-menu">
+          <p id="star-menu-text">What is this?</p>
+          <button id="starBtnOne">One</button>
+          <input
+            type="text"
+            id="star-input"
+            maxlength="12"
+            onkeyup="starUpdateTxt()"
+          />
+          <button id="starBtnTwo">Two</button>
+        </div>
+        <div class="star-screen"><p>Here we go</p></div>
+        <div class="star-foot"><p>Important</p></div>
+      </div>
+    </div>
+
+    <!-- Container 3 -->
+    <div class="boxHolder">
+      <div id="bigBox">
+        <div class="box oneBox"><h1>BOX</h1></div>
+        <div class="box twoBox">
+          <button class="boxBtnOne"></button>
+        </div>
+        <div class="box threeBox">
+          <button class="boxBtnTwo"></button>
+        </div>
+        <div class="box fourBox">
+          <button class="boxBtnThree"></button
+          ><button class="boxBtnMid"></button
+          ><button class="boxBtnFour"></button>
+        </div>
+        <div class="box fiveBox">
+          <button class="boxBtnFive"></button>
+          <button class="boxBtnSix"></button>
+        </div>
+        <div class="box sixBox">
+          <p id="boxOutput">NULL</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,108 +1,14 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-/* Container 1 - YES PUSH */
-.yesyes {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: darkgoldenrod;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  text-align: center;
-}
-
-.yesyes input {
-  text-align: center;
-}
-
-#yesBtnTwo {
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  border: 5px;
-}
-
-#yesyes {
-  background-color: red;
-  color: rgb(0, 255, 0);
-}
-
-#yesMsg {
-  background-color: white;
-  color: blue;
-  width: 300px;
-}
-
-/* Container 2 - STAR BOX */
-
-.starBox {
-  display: flex;
-  justify-content: center;
-}
-
-.starstar {
-  display: grid;
-  margin-top: 50px;
-  width: 800px;
-  grid-template-areas:
-    "head head head"
-    "menu screen screen"
-    "foot foot foot";
-}
-
-.star-header {
-  grid-area: head;
-  background-color: gray;
-}
-
-.star-menu {
-  grid-area: menu;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(211, 211, 211);
-}
-
-.star-menu button {
-  margin: 10px;
-}
-
-.star-screen {
-  grid-area: screen;
-  background-color: rgb(77, 77, 77);
-}
-
-.star-foot {
-  grid-area: foot;
-  background-color: rgb(68, 68, 68);
-  color: white;
-  font-size: 20px;
-}
-
-/* Container 3 - BIG BOX */
-
-.boxHolder {
-  display: flex;
-  justify-content: center;
-}
-
 #bigBox {
   display: grid;
   margin-top: 50px;
-  background-color: black;
+  background-color: rgb(0, 53, 122);
   padding: 10px;
   border-radius: 10px;
   grid-template-areas:
-    "head head head"
-    "leftaside centeraside rightaside"
+    "head head rightaside"
+    "centeraside centeraside rightaside"
     "footone footone rightaside"
-    "foottwo foottwo foottwo";
+    "foottwo foottwo leftaside";
 }
 
 .box {
@@ -113,23 +19,23 @@
 
 .oneBox {
   grid-area: head;
-  background-color: rgb(228, 32, 32);
+  background-color: rgb(172, 32, 228);
   display: flex;
 }
 
 .twoBox {
   grid-area: leftaside;
-  background-color: brown;
+  background-color: rgb(142, 165, 42);
 }
 
 .threeBox {
   grid-area: centeraside;
-  background-color: crimson;
+  background-color: rgb(20, 157, 220);
 }
 
 .fourBox {
   grid-area: rightaside;
-  background-color: firebrick;
+  background-color: rgb(34, 144, 178);
   display: flex;
   flex-direction: column;
 }
@@ -143,7 +49,7 @@
 
 .sixBox {
   grid-area: foottwo;
-  background-color: rgba(228, 32, 32, 0.671);
+  background-color: rgba(205, 32, 228, 0.671);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -186,7 +92,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(117, 31, 187);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -198,17 +104,17 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: rgb(105, 12, 12);
+  background-color: rgb(255, 0, 0);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #040a0f;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #949ea7;
 }
 
 input:checked + .slider:before {
