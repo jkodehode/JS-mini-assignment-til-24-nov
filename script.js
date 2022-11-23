@@ -250,7 +250,8 @@ oneBoxBtn.addEventListener("mouseleave", (e) => {
     " width: 100%;font-size: 20px; padding: 2px 5px; margin: 0px 10px; background-color: rgb(228, 32, 32); border: solid 1px black; border-radius: 3px";
 });
 oneBoxBtn.addEventListener("click", (e) => {
-  clickCollector = [];
+  clickCollector.length = 0;
+  boxOutput.innerText = "RESTART";
 });
 
 // Inside Boxes
@@ -313,4 +314,33 @@ boxBtnSix.addEventListener("click", (e) => {
   boxOutput.innerText = clickTern;
 });
 
-// switch case
+// switch case // fritt kopiert fra en på nett. fordi det var et par ting i den jeg ikke kunne
+// venter på DOM til å loade
+//* Lot denne være. rakk ikke. men switchen er jo grei. hehe
+// document.addEventListener("DOMContentLoaded", (e) => {
+//   //putter knappen inn i en variabel
+//   const knapp = document.querySelector("#boxKnapp");
+
+//   // venter på at brukeren klikker knappen
+//   knapp.addEventListener(
+//     "change",
+//     (e) => {
+//       //putter valgt verdi inn i en variabel
+//       let knappValg = this.color.value;
+
+//       // "switch statement"
+//       switch (knappValg) {
+//         case "valgEn":
+//           boxOutput.innerText = "okei";
+//           break;
+//         case "valgTo":
+//           boxOutput.innerText = "okeei";
+//           break;
+//         case "valgTre":
+//           boxOutput.innerText = "OK";
+//           break;
+//       }
+//     },
+//     false
+//   );
+// });
